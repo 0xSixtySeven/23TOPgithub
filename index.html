@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>First Webpage</title>
+
+</head>
+
+<body>
+    <!-- Headings are different from other HTML text elements: they are displayed larger and bolder than other text to signify that they are headings.
+
+There are 6 different levels of headings starting from <h1> to <h6>. The number within a heading tag represents that heading’s level. The largest and most important heading is h1, while h6 is the tiniest heading at the lowest level. -->
+    <h1>Hello Motherfuckers!</h1>
+
+    /////////////////////////
+    ////// PARAGRAPHS ///////
+    /////////////////////////
+    <!-- to separate paragraphs <p> </p>-->
+    <p>
+        paragraph 1
+    </p>
+    <p>
+        paragraph 2
+    </p>
+
+    /////////////////////////
+    ///////// LISTS /////////
+    /////////////////////////
+    <!-- Unordered lists are created using the <ul> element, and each item within the list is created using the list item element <li>. 
+        Each list item in an unordered list begins with a bullet point:-->
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ul>
+
+    <!-- Ordered lists are created using the <ol> element. Each individual item in them is again created using the list item element <li>. However, each list item in an ordered list begins with a number instead: -->
+    <ol>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+    </ol>
+
+    //////////////////////////
+    ////////// LINKS /////////
+    //////////////////////////
+    <!-- OPENING LINKS IN ANOTHER TAB -->
+    <!-- "anchor <a></a>": any text wrapped with an anchor<a></a> tag without a href attribute will look like plain text. If the "href" attribute is present, the browser will give the text a blue color and underline it to signify it is a link. example: <a href="link"> string </a> -->
+
+    <!-- "target": attribute is used to specify where the linked document will open when the link is clicked. The target attribute can have one of the following values: "_blank" - Opens the linked document in a new window or tab, "_self" - Opens the linked document in the same window/tab as it was clicked (this is default), "_parent" - Opens the linked document in the parent frame, "_top" - Opens the linked document in the full body of the window, "_framename" - Opens the linked document in a named frame  -->
+
+    <!-- "rel": it is recommended to always pair a target="_blank" with a rel="noopener noreferrer". "rel" is used for security reasons. It stands for "relationship" and is used to describe the relationship between the current document and the linked document. "noopener" prevents the new page from being able to access the window.opener property and ensures it runs in a separate process. "noreferrer" has the same effect, but also prevents the Referer header from being sent to the new page. This header contains information about the current page that the new page could use to track where the request came from. -->
+    <a href="https://www.theodinproject.com/about/" target="_blank" rel="noopener noreferrer">Click here</a>
+
+    <!-- Absolute and relative links -->
+
+    <!-- Links to pages on other websites on the internet are called absolute links. Like the one we used above this -->
+    <!-- example: <a href="https://www.theodinproject.com/about/" target="_blank" rel="noopener noreferrer">Click here</a> -->
+
+    <!-- Links to other pages on the same website are called relative links. -->
+    <a href="./pages/about.html">About</a>
+
+    //////////////////////////
+    ///////// IMAGES /////////
+    //////////////////////////
+    <!-- Images are inserted using the <img> element. The <img> element is an empty element, meaning it does not need a closing tag. -->
+
+    <!-- If we want to load the .jpg in the about sub link we need to use the relative path. example: <img
+        src="../images/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg"> in the about.html code file -->
+
+    <!-- Image size attributes: 'height' and 'width'
+    While not strictly required, specifying height and width attributes in image tags helps the browser layout the page without causing the page to jump and flash.
+    example: <img src="image.jpg" alt="image" height="100" width="100"> -->
+    <img src="./images/charlesdeluvio-Mv9hjnEUHR4-unsplash.jpg" alt="The Doggo" height="853" width="640">
+
+</body>
+
+</html>
